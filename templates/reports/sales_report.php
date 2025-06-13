@@ -9,7 +9,7 @@
 
     <button type="submit">View</button>
     <button type="submit" name="download" value="pdf">Download PDF</button>
-<?= $this->Form->end() ?>
+     <?= $this->Form->end() ?>
 
 <?php if (!empty($sales)): ?>
     <table>
