@@ -20,10 +20,7 @@ class AppController extends Controller {
     $this->response = $this->response->withHeader('Expires', '0');
 }
 
-
-
-
-    public function beforeFilter(EventInterface $event) {
+public function beforeFilter(EventInterface $event) {
         $this->response = $this->response->withDisabledCache();
 
         parent::beforeFilter($event);
